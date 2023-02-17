@@ -1,2 +1,1 @@
-const fs = require('fs');
-const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+const s = require('fs').readFileSync('try.txt').toString().split('\n');
