@@ -1,0 +1,2 @@
+const a = require('fs').readFileSync('/dev/stdin').toString().split(' ').map((v) => {return parseInt(v)});
+console.log(`${a[0]+a[1]}\n${a[0]-a[1]}\n${a[0]*a[1]}\n${parseInt(a[0]/a[1])}\n${a[0]%a[1]}`);
