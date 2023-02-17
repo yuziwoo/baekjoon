@@ -1,2 +1,2 @@
-const s = require('fs').readFileSync('try.txt').toString();
-console.log(`${s}??!`);
+const s = require('fs').readFileSync('try.txt').toString().trim();
+console.log(s + "??!");
