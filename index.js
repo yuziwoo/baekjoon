@@ -1,8 +1,1 @@
-const s = require('fs').readFileSync('/dev/stdin').toString();
-let a = "";
-let b = "";
-for (let i = 0; i < parseInt(s); i++) {
-  a += "*";
-  b += `${a}\n`;
-}
-console.log(b);
+console.log(parseInt(require('fs').readFileSync('/dev/stdin').toString().trim()).toString(2).split("").filter((v) => v==1).length);
