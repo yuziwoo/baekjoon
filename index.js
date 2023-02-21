@@ -1,8 +1,4 @@
-const s = (require('fs').readFileSync('/dev/stdin')+'').split(' ').map(v => parseInt(v));
-const [a, b, c] = s;
-let d = [];
-d.push((a+b)%c);
-d.push(((a%c) + b%c)%c);
-d.push((a*b)%c);
-d.push(((a%c)*(b%c))%c)
-console.log(d.join("\n"));
+const s = (require('fs').readFileSync('/dev/stdin')+'').split('\n');
+const a = parseInt(s[0]);
+const b = s[1].split("").map(v => parseInt(v));
+console.log(`${b[2]*a}\n${b[1]*a}\n${b[0]*a}\n${a*s[1]}`);
